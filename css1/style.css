@@ -1,0 +1,23 @@
+.w3-content{position:relative;width: 300px;margin-top:0;display: flex;flex-direction: column;align-items: center;justify-content: center;border: 2px solid #000;}
+.w3-btn,.w3-button{width: 30px;height: 30px;border:none; border-radius: 50%;display:grid;place-content: center;outline:0;padding:0;vertical-align:center;overflow:hidden;text-decoration:none;
+	color:#FFF;background-color:#000;border: 2px solid #000;text-align:right;cursor:pointer;white-space:nowrap}
+.w3-btn,.w3-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;
+	user-select:none} 
+.w3-disabled,.w3-btn:disabled,.w3-button:disabled{cursor:not-allowed;opacity:0.3}.w3-disabled *,:disabled *{pointer-events:none}
+.w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button{width:100%;text-align:right;padding:8px 16px}
+.w3-button:hover{color:#000!important;background-color:#ccc!important}p.solid {border-style: solid;}
+
+
+
+.w3-content button {
+position: absolute;
+top: 50%;
+}
+
+/* .mySlides{
+	position: relative;
+	top: 6rem;
+} */
+
+.w3-display-right {position: absolute;right:1rem; top:1rem !important;}
+.w3-display-left {position: absolute;left:1rem; top: 1rem !important;}

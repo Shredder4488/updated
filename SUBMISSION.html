@@ -1,0 +1,39 @@
+	<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html" ;charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+</head>
+
+<body>
+	<div id="wrapper">
+		<img src="img/logo.png">
+		<div id="slider">
+			<li class="slide"></li>
+			<li class="slide"></li>
+			<li class="slide"></li>
+			<li class="slide"></li>
+			<li class="slide"></li>
+		</ul>	
+		<div id="exit"></div>
+	</div>
+	</div>
+	<script src="https://cdnjs.cloudfare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+		function plusDivs(n) {
+		showDivs(slideIndex += n);
+		 }
+		function showDivs(n) {
+		var i;
+		var x = document.getElementsByClassName("slide");
+		if (n > x.length) {slideIndex = 1} if (n < 1) {slideIndex = x.length}for
+		(i = 0; i < x.length; i++) {x[i].style.display = "none";}
+		x[slideIndex-1].style.display = "block"; }
+	   </script>
+</body>
+</html>
