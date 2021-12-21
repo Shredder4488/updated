@@ -5,27 +5,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css1/style.css">
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudfare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </div>
 </head>
 <body>
 
 <div class="sub">
-	<button class="sub-button sub-black sub-display-left" onclick="plusDivs(-1)" >&#10094;</button>
+	<button class="sub-button sub-black sub-display-left" onclick="plusDivs()" >&#10094;</button>
 	<div class="sub-display-center"><img src="img/logo.png" height="52px" width="80px"></div>
-	<button class="sub-button sub-black sub-display-right" onclick="plusDivs(1)" align = "sub-display-right">&#10095;</button>
-<img class="mySlides" src="img1/slide1.png" alt="custom_html_banner1" height="250px" width="300px">
-<img class="mySlides" src="img1/slide2.png" alt="custom_html_banner2" height="250px" width="300px">
-<img class="mySlides" src="img1/slide3.png" alt="custom_html_banner3" height="250px" width="300px">
-<img class="mySlides" src="img1/slide4.png" alt="custom_html_banner4" height="250px" width="300px">
-<img class="mySlides" src="img1/slide5.png" alt="custom_html_banner4" height="250px" width="300px">
+	<button class="sub-button sub-black sub-display-right" onclick="minusDivs()" align = "sub-display-right">&#10095;</button>
+	<div class="images">
+		<img class="mySlides" src="img1/slide1.png" alt="custom_html_banner1" height="250px" width="300px">
+		<img class="mySlides" src="img1/slide2.png" alt="custom_html_banner2" height="250px" width="300px">
+		<img class="mySlides" src="img1/slide3.png" alt="custom_html_banner3" height="250px" width="300px">
+		<img class="mySlides" src="img1/slide4.png" alt="custom_html_banner4" height="250px" width="300px">
+		<img class="mySlides" src="img1/slide5.png" alt="custom_html_banner4" height="250px" width="300px">
+	</div>
+
 </div>
-
-<div class="nav">
-    <button id="play">play()</button>
-    <button id="pause">restart()</button>
-
+	
 	<script src="js/main1.js"></script>
-	<script src="https://cdnjs.cloudfare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>

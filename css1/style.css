@@ -11,7 +11,6 @@ p.solid {border-style: solid;}
 
 .sub-content button {
 position: absolute;
-top: 50%;
 }
 
 .sub-display-center{
@@ -34,3 +33,14 @@ top: 50%;
 
 .sub-display-right {position: absolute;right:1rem; top:1rem !important;}
 .sub-display-left {position: absolute;left:1rem; top: 1rem !important;}
+
+.images{
+	position: relative;
+	width: 300px;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content:  center;
+	overflow: hidden;
+}

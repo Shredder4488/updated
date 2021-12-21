@@ -1,19 +1,19 @@
 var slideIndex = 1;
- showDivs(slideIndex);
- function plusDivs(n) {
-    var tween = gsap.to(".mySlides", {
-        duration: 4, 
-        x: 750, 
-        rotation: 180, 
-        ease: "none", 
-        paused: false
-      });
-      
-      // click handlers for controlling the tween instance...
-      document.querySelector("#play").onclick = () => tween.play();
-      document.querySelector("#restart").onclick = () => tween.restart();
-     
-  }
+var slide = document.getElementsByClassName("mySlides")
+var counterVal = 1;
+
+
+function plusDivs() {
+  TweenLite.to(slide, 1, {x:counterVal*300});
+  counterVal++;
+  return counterVal
+}
+
+function minusDivs(){
+  TweenLite.to(slide, 1, {x:-counterVal*300});
+  counterVal--;
+  return counterVal
+}
   
   // showDivs(slideIndex += n);
   // function showDivs(n) {
