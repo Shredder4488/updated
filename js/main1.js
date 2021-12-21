@@ -1,19 +1,33 @@
 var slideIndex = 1;
 var slide = document.getElementsByClassName("mySlides")
-var counterVal = 1;
+var counterVal = 0;
 
 
-function plusDivs() {
-  TweenLite.to(slide, 1, {x:counterVal*300});
-  counterVal++;
-  return counterVal
-}
-
-function minusDivs(){
+document.getElementById("leftbtn").addEventListener("click", () => {
+  if(counterVal>1){
+  counterVal = counterVal - 1;
   TweenLite.to(slide, 1, {x:-counterVal*300});
-  counterVal--;
-  return counterVal
-}
+  }
+  else
+  {
+    counterVal = 0;
+    TweenLite.to(slide, 1, {x:0});
+  }
+})
+
+document.getElementById("rightbtn").addEventListener("click", () => {
+  if(counterVal<4)
+  {
+    counterVal = counterVal + 1;
+    TweenLite.to(slide, 1, {x:counterVal*-300});
+  }
+  else
+  {
+    counterVal = 0;
+    TweenLite.to(slide, 1, {x:0});
+  }
+  
+})
   
   // showDivs(slideIndex += n);
   // function showDivs(n) {

@@ -23,16 +23,12 @@ position: absolute;
 .mySlides{
 	width:300px;
 	height:auto;
-	object-fit:contain;
-	transition: all 0.5f ease;
+	object-fit: contain;
+	object-position: center;
 }
-/* .mySlides{
-	position: relative;
-	top: 6rem;
-} */
 
-.sub-display-right {position: absolute;right:1rem; top:1rem !important;}
-.sub-display-left {position: absolute;left:1rem; top: 1rem !important;}
+.sub-display-right {position: absolute;right:1rem; top:1rem;}
+.sub-display-left {position: absolute;left:1rem; top: 1rem;}
 
 .images{
 	position: relative;
@@ -41,6 +37,6 @@ position: absolute;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
-	justify-content:  center;
+	justify-content:  flex-start;
 	overflow: hidden;
 }
