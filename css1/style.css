@@ -15,10 +15,14 @@ position: absolute;
 
 .sub-display-center{
 	padding-top:5px ;
-}
-.sub-display-center img{
 	width: 100px;
 	height: 50px;
+}
+.sub-display-center img{
+	width: inherit;
+	height: inherit;
+	object-fit: cover !important;
+	object-position: 50% 50%;
 }
 .mySlides{
 	width:300px;
